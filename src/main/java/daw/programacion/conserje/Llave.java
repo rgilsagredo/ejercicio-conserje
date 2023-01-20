@@ -11,9 +11,8 @@ public class Llave {
     public boolean abrirPuerta(Puerta puerta) {
         if (this.numero == puerta.getNumero()) {
             puerta.setAbierta(true);
-            return true;
         }
-        return false;
+        return puerta.isAbierta();
     }
 
     public int getNumero() {
